@@ -22,3 +22,11 @@ Clone reveal.js as a submodule:
 Once dependencies are installed, update styles with grunt:
 
     $ grunt watch
+
+### Live server
+
+To test changes, you need to http-serve markdown-flavoured slides via:
+
+    $ python -mSimpleHTTPServer 8080
+
+Then, open your favourite browser at [http://localhost:8080](http://localhost:8080).
