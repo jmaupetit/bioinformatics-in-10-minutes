@@ -5,18 +5,21 @@ Date : 30/09/2014
 Auteur : Julien Maupetit
 -->
 
-<img src="images/Logo_TailorDev_500px.png" alt="Logo TailorDev" />
+# (bio)
+## informatics
+### in 10 minutes
 
-##### Julien Maupetit
-
-<div class="img-wrapper">
-    <img src="images/Logo_BPI_France.png" alt="Logo BPI France" width="200px">
-</div>
-
+Julien Maupetit
 
 ----
 <!-- ---------- Section ---------- -->
-# What is bio-informatics
+## Disclaimer
+
+> This talk is a lie.
+
+----
+<!-- ---------- Section ---------- -->
+## What is bio-informatics?
 
 ----
 <p class="fragment">
