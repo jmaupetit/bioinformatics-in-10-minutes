@@ -1,0 +1,6 @@
+{
+  "name": "bioinformatics-10",
+  "dependencies": {
+    "compass-mixins": "*"
+  }
+}
