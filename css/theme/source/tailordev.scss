@@ -9,7 +9,7 @@
 @import "../../../bower_components/reveal.js/css/theme/template/settings";
 // ---------------------------------------------
 
-@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,400italic,700italic');
+@import url('http://fonts.googleapis.com/css?family=Lato:100,100italic,300,400,700,400italic,700italic');
 
 // Settings to override ------------------------
 // Background of the presentation
@@ -19,6 +19,7 @@ $backgroundColor: #efefef;
 $mainFont: 'Lato', sans-serif;
 $mainFontSize: 44px;
 $mainColor: #333;
+$mainColorAlt: #fff;
 $mainFontWeight: 300;
 
 // Headings
@@ -35,10 +36,10 @@ $linkColorHover: lighten($linkColor, 20%);
 
 // Text selection
 $selectionBackgroundColor: #39b195;
-$selectionColor: #fff;
+$selectionColor: $mainColorAlt;
 
 // Override theme settings (see ../template/settings.scss)
-$heading1TextShadow: 0 1px 0 #fff;
+$heading1TextShadow: 0 1px 0 $mainColorAlt;
 
 // Background generator
 @mixin bodyBackground($color: $backgroundColor) {
@@ -65,98 +66,114 @@ img.slide-logo {
 
 footer.slide-footer {
     position: fixed;
-    bottom: 10px;
-    left: 10px;
-    color: $mainColor;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: $mainColor;
+    width: 100%;
+    color: $mainColorAlt;
     font-family: $mainFont;
-    font-weight: 500!important;
+    font-weight: 300!important;
 }
 
 // Overriden styles
-.reveal section {
-    font-weight: $mainFontWeight !important;
+.reveal {
+    .controls {
+        bottom: 30px;
+        right: 0;
+    }
 
-    &:first-child {
+    section {
+        font-weight: $mainFontWeight !important;
+
+        &:first-child {
+            h2 {
+                margin-bottom: 0.2em;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                font-weight: 300;
+            }
+
+            p {
+                border-top: 1px solid $mainColor;
+                padding-top: 0.3em;
+            }
+        }
+
         h2 {
-            margin-bottom: 0.2em;
-            text-transform: uppercase;
-        }
-
-        h3 {
-            font-weight: 300;
-        }
-
-        p {
-            border-top: 1px solid $mainColor;
-            padding-top: 0.3em;
-        }
-    }
-
-    h2 {
-        margin-bottom: 1em;
-    }
-
-    h3, h4, h5, h6 {
-        margin-bottom: 1em;
-        text-transform: none;
-    }
-
-    img {
-        margin: 20px 0px;
-        background: none;
-        border: 0;
-        box-shadow: 0 0 0;
-
-        &.large {
-            width: 80%;
-        }
-    }
-
-    p {
-        font-weight: $mainFontWeight;
-
-        &.air {
             margin-bottom: 1em;
         }
 
-        span {
-            font-weight: 500;
-        }
-    }
-
-    ul {
-        font-weight: $mainFontWeight;
-    }
-
-    blockquote {
-        font-weight: $mainFontWeight;
-        font-style: normal;
-        font-size: 1.1em;
-        line-height: 1.2em;
-        padding: 0.6em;
-    }
-
-    table {
-        th {
-            font-weight: 500;
-            text-shadow: none;
-            padding: 0.3em;
-            background-color: rgba(#fff, 0.8);
-            color: #2e354f;
+        h3, h4, h5, h6 {
+            margin-bottom: 1em;
+            text-transform: none;
         }
 
-        &.full-width {
-            width: 100%;
+        img {
+            margin: 20px 0px;
+            background: none;
+            border: 0;
+            box-shadow: 0 0 0;
 
-            tr > td,
-            tr > th {
-                text-align: left;
+            &.large {
+                width: 80%;
             }
         }
-    }
 
-    .credit {
-        font-size: 0.5em;
-        a { vertical-align: baseline }
+        p {
+            font-weight: $mainFontWeight;
+
+            &.air {
+                margin-bottom: 1em;
+            }
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        ul {
+            font-weight: $mainFontWeight;
+        }
+
+        blockquote {
+            background-color: $mainColor;
+            color: $mainColorAlt;
+            padding: 0.6em;
+            font-style: normal;
+            font-size: 1em;
+            line-height: 1.2em;
+
+            p {
+                font-weight: 100 !important;
+                font-style: italic;
+            }
+        }
+
+        table {
+            th {
+                font-weight: 500;
+                text-shadow: none;
+                padding: 0.3em;
+                background-color: rgba($mainColorAlt, 0.8);
+                color: #2e354f;
+            }
+
+            &.full-width {
+                width: 100%;
+
+                tr > td,
+                tr > th {
+                    text-align: left;
+                }
+            }
+        }
+
+        .credit {
+            font-size: 0.5em;
+            a { vertical-align: baseline }
+        }
     }
 }
