@@ -1,6 +1,6 @@
 # Bioinformatics in 10 minutes.
 
-Un talk en 10 minutes pour aborder 10 questions auxquelles la bio-informatique tente de répondre.
+10 minutes to present 10 questions bioinformatics tries to answer to.
 
 ## Contributing
 
