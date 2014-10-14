@@ -1,8 +1,8 @@
 <!-- 
-Titre : Le projet TailorDev
-Date : 30/09/2014
-Événement : Présentation BIOASTER
-Auteur : Julien Maupetit
+Title : Bioinformatics in 10 minutes
+Date : 10/15/2014
+Event : APIHour #11
+Author : Julien Maupetit
 -->
 
 # (bio)
@@ -15,11 +15,43 @@ Julien Maupetit
 <!-- ---------- Section ---------- -->
 ## Disclaimer
 
-> This talk is a lie.
+> My abstract was a lie.
 
 ----
 <!-- ---------- Section ---------- -->
-## What is bio-informatics?
+
+## What is
+## bioinformatics?
+
+---
+### Quick and dirty definition
+
+> Bioinformatics is the application of **computer technology** 
+> to the management of **biological information**. 
+> <cite>[bioplanet.com](http://www.bioplanet.com/what-is-bioinformatics/)</cite>
+
+---
+### World-of-sequences definition
+
+> The **mathematical**, **statistical** and **computing** methods that aim to
+> **solve biological problems** using DNA and amino acid sequences and related 
+> information.
+> <cite>Fredj Tekaia (Pasteur Institute)</cite>
+
+---
+### Complete definition
+
+> Bioinformatics is an **interdisciplinary** field that **develops methods and 
+> software tools** for understanding biological data [...] combines computer 
+> science, statistics, mathematics and engineering to **study and process 
+> biological data**.
+> <cite>[wikipedia](http://en.wikipedia.org/wiki/Bioinformatics)</cite>
+
+---
+### Main research fields
+
+* Genomics (sequences)
+* Structural bioinformatics (structures)
 
 ----
 <!-- ---------- Section ---------- -->
