@@ -1,6 +1,7 @@
 {
   "name": "bioinformatics-10",
   "dependencies": {
-    "compass-mixins": "*"
+    "compass-mixins": "*",
+    "reveal.js": "*"
   }
 }
