@@ -22,6 +22,7 @@ Julien Maupetit
 ## What is bio-informatics?
 
 ----
+<!-- ---------- Section ---------- -->
 <p class="fragment">
     <span>Say hello.</span><br>
     <br>
