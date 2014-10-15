@@ -108,6 +108,14 @@ footer.slide-footer {
 
         h2 {
             margin-bottom: 1em;
+            span {
+                @include border-radius(5px);
+                padding: 0 0.3em;
+                background-color: $mainColor;
+                color: $mainColorAlt;
+                font-size: 0.8em;
+                text-align: center;
+            }
         }
 
         h3, h4, h5, h6 {
@@ -116,14 +124,11 @@ footer.slide-footer {
         }
 
         img {
-            margin: 20px 0px;
+            margin: 10px 0;
             background: none;
             border: 0;
             box-shadow: 0 0 0;
-
-            &.large {
-                width: 80%;
-            }
+            max-width: 80%;
         }
 
         p {
