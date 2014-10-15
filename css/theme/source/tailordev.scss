@@ -66,6 +66,7 @@ img.slide-logo {
 
 footer.slide-footer {
     position: fixed;
+    z-index: 1;
     bottom: 0;
     left: 0;
     padding: 10px;
@@ -86,7 +87,7 @@ footer.slide-footer {
     section {
         font-weight: $mainFontWeight !important;
 
-        &:first-child {
+        .title {
             h2 {
                 margin-bottom: 0.2em;
                 text-transform: uppercase;
@@ -128,7 +129,7 @@ footer.slide-footer {
             background: none;
             border: 0;
             box-shadow: 0 0 0;
-            max-width: 80%;
+            max-height: 90%;
         }
 
         p {
@@ -188,9 +189,8 @@ footer.slide-footer {
             }
         }
 
-        .credit {
-            font-size: 0.5em;
-            a { vertical-align: baseline }
+        code {
+            padding: 1em;
         }
     }
 }
