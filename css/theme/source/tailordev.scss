@@ -1,0 +1,196 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+// Default mixins and settings -----------------
+@import "../../../bower_components/reveal.js/css/theme/template/mixins";
+@import "../../../bower_components/reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+@import url('http://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,700,400italic,700italic');
+
+// Settings to override ------------------------
+// Background of the presentation
+$backgroundColor: #efefef;
+
+// Primary/body text
+$mainFont: 'Lato', sans-serif;
+$mainFontSize: 44px;
+$mainColor: #333;
+$mainColorAlt: #fff;
+$mainFontWeight: 300;
+
+// Headings
+$headingFont: 'Lato', 'Helvetica', Helvetica, Arial, sans-serif;
+$headingColor: #444;
+$headingLineHeight: 1em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: none;
+$headingTextShadow: none;
+
+// Links and actions
+$linkColor: #19BEC0;
+$linkColorHover: lighten($linkColor, 20%);
+
+// Text selection
+$selectionBackgroundColor: #39b195;
+$selectionColor: $mainColorAlt;
+
+// Override theme settings (see ../template/settings.scss)
+$heading1TextShadow: 0 1px 0 $mainColorAlt;
+
+// Background generator
+@mixin bodyBackground($color: $backgroundColor) {
+	@include radial-gradient( rgba($color, 0), rgba($color, 1) );
+}
+
+@import "compass/css3";
+
+
+// Theme template ------------------------------
+@import "../../../bower_components/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+a {
+    color: $linkColor;
+    text-decoration: none;
+}
+
+img.slide-logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+footer.slide-footer {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: $mainColor;
+    width: 100%;
+    color: $mainColorAlt;
+    font-family: $mainFont;
+    font-weight: 300!important;
+}
+
+// Overriden styles
+.reveal {
+    .controls {
+        bottom: 30px;
+        right: 0;
+    }
+
+    section {
+        font-weight: $mainFontWeight !important;
+
+        .title {
+            h2 {
+                margin-bottom: 0.2em;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                background-color: $mainColor;
+                color: $mainColorAlt;
+                font-weight: 300;
+                padding: 0.4em;
+                margin-bottom: 0.3em;
+            }
+
+            p {
+                text-align: right;
+                font-size: 0.8em;
+            }
+        }
+
+        h2 {
+            margin-bottom: 1em;
+            span {
+                @include border-radius(5px);
+                padding: 0 0.3em;
+                background-color: $mainColor;
+                color: $mainColorAlt;
+                font-size: 0.8em;
+                text-align: center;
+            }
+        }
+
+        h3, h4, h5, h6 {
+            margin-bottom: 1em;
+            text-transform: none;
+        }
+
+        img {
+            margin: 10px 0;
+            background: none;
+            border: 0;
+            box-shadow: 0 0 0;
+            max-height: 600px;
+        }
+
+        p {
+            font-weight: $mainFontWeight;
+
+            strong {
+                font-weight: 400;
+            }
+
+            &.air {
+                margin-bottom: 1em;
+            }
+
+            span {
+                font-weight: 500;
+            }
+        }
+
+        ul {
+            font-weight: $mainFontWeight;
+        }
+
+        blockquote {
+            @include border-radius(5px);
+            background-color: $mainColor;
+            color: $mainColorAlt;
+            padding: 0.6em;
+            font-style: normal;
+            font-size: 1em;
+            line-height: 1.2em;
+
+            p {
+                font-weight: 100 !important;
+                margin-bottom: 0;
+            }
+
+            cite {
+                display: block;
+                border-top: 1px solid $mainColorAlt;
+                margin-top: 0.6em;
+                font-size: 0.6em;
+                text-align: right;
+            }
+        }
+
+        table {
+            width: 100%;
+
+            th {
+                // font-weight: 500;
+                // text-shadow: none;
+                padding: 0.3em;
+            }
+
+            td {
+
+            }
+        }
+
+        code {
+            padding: 1em;
+        }
+    }
+}
